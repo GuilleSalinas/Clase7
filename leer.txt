@@ -1,0 +1,42 @@
+Para hacer uso del programa debe de considerar ingresar por consola lo siguiente:
+
+Para listar el JSON Completo la opción es:
+        npm start list
+----------------------------------------------------------------
+
+Para agregar una tarea y se guarde en el JSON la opción es:
+    npm start add tarea descripcion
+
+NOTA: tarea es la tarea a agregar y la descripción, si ambas contienen mas de una palabra deben de ir entre comillas, ej: 
+        npm start add caminar "hace bien a la salud"    
+
+----------------------------------------------------------------
+
+Para modificar solo la descripcion y "NO" la tarea, la opción es:
+    npm start edit tarea descripcion
+
+NOTA: tarea es la tarea a Modificar y la descripción es la que se modificara
+    Si la tarea ingresada no existe el proceso termina sin cambios.
+ej: 
+        npm start edit caminar "hace bien a la salud y a la mente"       
+
+----------------------------------------------------------------
+Para borrar la descripción solamente la opción es:
+        npm start delete tarea
+
+NOTA: Tarea es la tarea en la cual se quiere "BORRAR" la descripcion.
+    Si la tarea ingresada no existe el proceso termina sin cambios.
+
+----------------------------------------------------------------
+Para borrar el registro completo la opción es:
+    npm start deleteRegistro tarea
+
+NOTA: tarea es la tarea en la cual se quiere borrar.
+    En este caso solo se debe ingresar la tarea solamente.
+    Si la tarea ingresada no existe el proceso termina sin cambios.
+
+----------------------------------------------------------------
+Para copiar o generar el JSON desde el inicio la opción es:
+    npm start writeJson
+
+NOTA: Esta opcion genera el JSON origial borrando todos los cambios realizados.
